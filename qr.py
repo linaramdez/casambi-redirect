@@ -7,7 +7,7 @@ import os
 
 nombreArchivo = "casambi"
 url_android = "https://play.google.com/store/apps/details?id=com.casambi.CBU"
-url_ios = "https://apps.apple.com/app/id622477409"
+url_ios = "https://apps.apple.com/es/app/casambi/id731859317"
 logo_path = "logo.png"
 output_folder = r"C:\Users\Lina\OneDrive\Escritorio\Python\Apuntes2024\casambi-redirect"
 
