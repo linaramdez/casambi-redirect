@@ -9,7 +9,7 @@ nombreArchivo = "casambi"
 url_android = "https://play.google.com/store/apps/details?id=com.casambi.CBU"
 url_ios = "https://apps.apple.com/app/id622477409"
 logo_path = "logo.png"
-output_folder = "salida"
+output_folder = r"C:\Users\Lina\OneDrive\Escritorio\Python\Apuntes2024\casambi-redirect"
 
 # === HTML inteligente ===
 
@@ -48,7 +48,7 @@ html_redireccion = f"""<!DOCTYPE html>
 </html>
 """
 # === Crear carpeta de salida si no existe ===
-os.makedirs(output_folder, exist_ok=True)
+#os.makedirs(output_folder, exist_ok=True)
 
 # === Guardar HTML ===
 html_path = os.path.join(output_folder, f"{nombreArchivo}.html")
@@ -57,7 +57,7 @@ with open(html_path, "w", encoding="utf-8") as f:
 
 # === Crear QR ===
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
-qr.add_data(f"https://apps.apple.com/app/id622477409")  # Sustituye por la URL real de tu hosting
+qr.add_data(f"https://linaramdez.github.io/casambi-redirect/casambi.html")  # Sustituye por la URL real de tu hosting
 qr.make()
 img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
 
